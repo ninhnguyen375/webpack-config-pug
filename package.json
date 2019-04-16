@@ -1,0 +1,20 @@
+{
+  "name": "cut-pts",
+  "version": "1.0.0",
+  "description": "training git and webpack",
+  "main": "index.js",
+  "author": "Ninh Nguyen",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "build": "webpack",
+    "start:dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
