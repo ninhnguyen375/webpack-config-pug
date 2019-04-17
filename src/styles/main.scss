@@ -1,13 +1,15 @@
-$bg: yellow;
+$bg: rgb(238, 238, 238);
 
 body {
   background: $bg;
 }
 
-.ninh {
-  background: #000;
+html {
+  box-sizing: border-box;
 }
 
-.main {
-  background: #000;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

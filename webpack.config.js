@@ -12,14 +12,20 @@ module.exports = {
         }
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-            options: { minimize: true }
-          }
-        ]
+        test: /\.pug$/,
+        use: {
+          loader: 'pug-loader'
+        }
       },
+      // {
+      //   test: /\.html$/,
+      //   use: [
+      //     {
+      //       loader: 'html-loader',
+      //       options: { minimize: true }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(png|jpg|jqeg|svg|gif)$/,
         use: ['file-loader']
@@ -32,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: './src/index.pug',
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
