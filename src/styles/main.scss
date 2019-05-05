@@ -13,3 +13,25 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  .brand {
+    flex-grow: 1;
+    .slogan,
+    .brand-icon {
+      display: inline-block;
+    }
+  }
+  .right-menu {
+    li {
+      display: inline-block;
+    }
+  }
+}
